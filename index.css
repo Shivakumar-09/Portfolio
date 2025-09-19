@@ -1,0 +1,141 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background-color: #000;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+header {
+  background-color: #1a1a38;
+}
+
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+.hero {
+  padding: 100px 20px;
+}
+.hero-img {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.role {
+  color: #9370DB;
+  font-weight: 500;
+}
+.description {
+  line-height: 1.6;
+  margin: 15px 0;
+}
+.tags {
+  margin: 20px 0;
+}
+.tag {
+  background: #2a2a4a;
+  padding: 6px 12px;
+  border-radius: 6px;
+  margin: 0 5px;
+}
+.buttons .button {
+  background: #9370DB;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 6px;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+.buttons .button:hover {
+  background: #6a4dbd;
+}
+
+.hover-underline {
+  font-size: 2.5rem;
+  position: relative;
+}
+.hover-underline::after,
+.hover-underline::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right, #ff0000, #00ffff);
+  transform: scaleX(0);
+  transition: transform 0.4s ease-out;
+}
+.hover-underline::after {
+  bottom: -5px;
+  left: 0;
+  transform-origin: right;
+}
+.hover-underline::before {
+  top: -5px;
+  left: 0;
+  transform-origin: left;
+}
+.hover-underline:hover::after,
+.hover-underline:hover::before {
+  transform: scaleX(1);
+}
+
+.footer {
+  padding: 20px;
+  font-size: 0.9rem;
+}
+.social-icons a {
+  color: #fff;
+  margin: 0 10px;
+  font-size: 1.6rem;
+  transition: color 0.3s;
+}
+.social-icons a:hover {
+  color: #9370DB;
+}
+.typing-box::after {
+  content: "I’m a Student";
+  font-size: 4rem;
+  margin-right: 70px;
+  color: aquamarine;
+  border-right: 3px solid;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  width: 0ch;
+  animation:
+    typeErase 5s steps(11) 0s forwards,
+    typeErase2 5s steps(17) 5s forwards,
+    typeErase3 6s steps(12) 10s forwards;
+  animation-iteration-count: infinite;
+}
+
+@keyframes typeErase {
+  0% { width: 0ch; content: "I’m a Student"; }
+  50% { width: 11ch; }
+  100% { width: 0ch; }
+}
+
+@keyframes typeErase2 {
+  0% { width: 0ch; content: "I’m a Storyteller"; }
+  50% { width: 17ch; }
+  100% { width: 0ch; }
+}
+
+@keyframes typeErase3 {
+  0% { width: 0ch; content: "I’m a Coder"; }
+  50% { width: 12ch; }
+  100% { width: 0ch; }
+}
+
+@keyframes typeErase3 {
+  0% { width: 0ch; content: "I’m a Coder"; }
+  50% { width: 12ch; }
+  100% { width: 0ch; }
+}
