@@ -1,231 +1,403 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Banoth Shiva Kumar - Portfolio</title>
+  <meta name="description"
+    content="Portfolio of Banoth Shiva Kumar, a Full Stack Developer specializing in MERN stack web applications.">
+  <title>Banoth Shiva Kumar | Full Stack Developer</title>
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-    crossorigin="anonymous">
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+
   <link rel="stylesheet" href="index.css">
 </head>
-<body>
-  <header class="site-header">
-    <nav class="navbar navbar-expand-lg navbar-dark px-4">
-      <a class="navbar-brand fw-bold text-light" href="#">
-        <h3 >Shiva Kumar</h3>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-smooth-scroll="true" tabindex="0">
+
+
+  <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
+    <div class="container">
+      <a class="navbar-brand fw-bold code-logo" href="#">
+        &lt;/Shiva&gt;
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa-solid fa-bars"></i>
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav gap-4">
-          <li class="nav-item"><a class="btn btn-outline-primary" href="#home">Home</a></li>
-          <li class="nav-item"><a class="btn btn-outline-info" href="#about">About</a></li>
-          <li class="nav-item"><a class="btn btn-outline-success" href="#education">Education</a></li>
-          <li class="nav-item"><a class="btn btn-outline-danger" href="#certificates">Certificates</a></li>
-          <li class="nav-item"><a class="btn btn-outline-info" href="#projects">Skills</a></li>
-          <li class="nav-item"><a class="btn btn-outline-primary" href="#contact">Contact</a></li>
+        <ul class="navbar-nav gap-3">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="education.html">Education</a></li>
+          <li class="nav-item"><a class="nav-link" href="#certificates">Certificates</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
         </ul>
       </div>
-    </nav>
-  </header>
-
-  <section id="home" class="hero d-flex align-items-center text-center">
-      <div class="col-lg-5 text-center">
-       <img src="shiva.jpg" alt="Shiva Kumar" 
-          class="img-fluid rounded-circle shadow hero-img"
-          style="width: 450px; height: 450px; ">
     </div>
-    <div class="container py-5 " style="margin-left: 80px;">
-  <div class="row align-items-center">
-    <div class="col-lg-9 text-lg-start text-center">
-      <p class="role text-uppercase fw-bold text-primary mb-2" style="font-size: 1.2rem; letter-spacing: 2px;">
-        Full Stack Developer
-      </p>
-      <h1 class="hover-underline display-5 fw-bold mb-3">
-       Banoth Shiva Kumar
-      </h1>
-      <p class="description mb-4" style="font-size: 1.1rem; line-height: 1.7; color: blanchedalmond;">
-        Crafting interactive user interfaces using <strong>HTML, CSS, JavaScript, Bootstrap, and React</strong> — 
-        from layout to launch.
-      </p>
-      
-      <div class="tags mb-5">
-        <span class="tag badge bg-dark text-light px-4 py-3 me-2">HTML/CSS/JS</span>
-        <span class="tag badge bg-primary px-4 py-3 me-2">React</span>
-        <span class="tag badge bg-success px-4 py-3 me-2">Bootstrap</span>
-        <span class="tag badge bg-warning text-dark px-4 py-3 me-2">MongoDB</span><pre></pre>
-        <span class="tag badge bg-secondary text-dark px-4 py-3">Node js</span>
-        <span class="tag badge bg-danger text-dark px-4 py-3">Drv</span>
-      </div>
+  </nav>
 
-      <div class="buttons">
-        <a href="#projects" class="btn btn-primary btn-lg px-4 me-3 shadow">🚀 View Projects</a>
-        <a href="#contact" class="btn btn-outline-light btn-lg px-4 shadow">📩 Contact Me</a>
-      </div>
-    </div>
-  </div>
-</div>
-</section>
-   <br>
-  <section id="about" class="py-5 text-center">
+
+  <section id="home" class="min-vh-100 d-flex align-items-center section-home">
     <div class="container">
-      <h2>About Me <i class="fa-solid fa-address-card"></i></h2><pre></pre>
-      <h3 style="font-size:20px; color: antiquewhite;">Get to know more about my background, expertise, and what drives me to create impactful web solutions.</h3>
-      <div class="typing-box">
-
-      </div>
-      <pre>
-        
-      </pre>
-     <div class="card border-primary mx-auto mt-4 shadow-lg animated-card" style="max-width: 50rem;">
-  <div class="card-header text-info" style="font-size: 30px;">Full Stack Developer</div>
-  <div class="card-body text-black px-20" style="font-size: 20px;">
-    <p>
-      I’m a Full Stack Developer specializing in building dynamic and responsive web applications.
-      I combine expertise in frontend technologies like HTML, CSS, and JavaScript with backend development
-      skills to create seamless user experiences. My work focuses on writing clean, efficient code 
-      while ensuring scalability and performance. I’m passionate about turning ideas into functional,
-      engaging applications that meet user needs. Continuously learning, 
-      I strive to stay updated with the latest web development trends and best practices.
-    </p>
-  </div>
-</div>
-
-    </div>
-  </section>
-  <pre>
-
-  </pre>
-<section id="education" class="py-5">
-  <div class="container text-center">
-    <h2 class="mb-3">Education <i class="fa-solid fa-book-open-reader"></i></h2>
-    <p style="text-align: center; color: beige;font-size: 25px; margin-left: 80px;">My academic journey and educational foundation that supports my technical skills.</p>
-    <div class="row justify-content-center">
-      <div class="col-md-20">
-
-        <div class="card mb-4 shadow-lg rounded-4 border-start border-4 border-primary edu-card" style="background-color: #B3E0F2">
-          <div class="card-body text-start">
-            <h6 class="text-primary">B.Tech - Information Technology <i class="fa-solid fa-graduation-cap"></i></h6>
-            <h5>Vardhaman College Of Engineering</h5>
-            <p><i class="fa-regular fa-calendar-days"></i> July 2023 – July 2027</p>
-            <p><i class="fa-solid fa-location-dot"></i> Shamshabad</p>
-            <p>Currently pursuing B.Tech IT, building strong foundations in web and software development.</p>
+      <div class="row align-items-center gy-5">
+        <div class="col-lg-6 order-lg-1 order-2">
+          <p class="lead text-accent fw-bold mb-2">Hello, I'm</p>
+          <h1 class="display-3 fw-bold mb-3 text-white">Banoth Shiva Kumar</h1>
+          <h2 class="h3 text-light mb-4">Full Stack Developer | Data Science Enthusiast</h2>
+          <p class="mb-5 text-light lead" style="max-width: 550px;">
+            I build scalable, secure, and user-friendly web applications with clean code.
+            Dedicated to solving complex problems through efficient full-stack solutions.
+          </p>
+          <div class="d-flex gap-3">
+            <a href="#projects" class="btn btn-primary btn-lg px-4">View Projects</a>
+            <a href="#contact" class="btn btn-outline-secondary btn-lg px-4">Contact Me</a>
+          </div>
+        </div>
+        <div class="col-lg-6 order-lg-2 order-1 text-center">
+          <div class="hero-image-wrapper move-up">
+            <img src="shiva.jpg" alt="Banoth Shiva Kumar" class="img-fluid rounded-circle shadow-lg hero-img"
+              style="left:50px ; margin-bottom: 80px; width: 350px; height: 350px; object-fit: cover;">
           </div>
         </div>
 
-        <div class="card mb-4 shadow-lg rounded-4 border-start border-4 border-info edu-card" style="background-color: #B3E0F2">
-          <div class="card-body text-start">
-            <h6 class="text-info">Intermediate - MPC <i class="fa-solid fa-building-columns"></i></h6>
-            <h5>Sri Chaitanya Jr College</h5>
-            <p><i class="fa-regular fa-calendar-days"></i> August 2021 – May 2023</p>
-            <p><i class="fa-solid fa-location-dot"></i> Adibatla</p>
-            <p>Completed intermediate studies with focus on Math, Physics, and Chemistry.</p>
-          </div>
-        </div>
-
-        <div class="card mb-4 shadow-lg rounded-4 border-start border-4 border-success edu-card" style="background-color: rgb(164, 208, 220);">
-          <div class="card-body text-start">
-            <h6 class="text-success">Primary & Secondary <i class="fa-solid fa-school"></i></h6>
-            <h5>S.T Savio High School</h5>
-            <p><i class="fa-regular fa-calendar-days"></i> May 2009 – March 2021</p>
-            <p><i class="fa-solid fa-location-dot"></i> Shamshabad</p>
-            <p>Completed foundational education with strong focus on mathematics and science.</p>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </div>
-</section>
-
-
-  <section id="certificates" class="py-5">
-    <div class="Certifications">
-        <h2 style="text-align: center;font-size:40px;">Certificates  <i class="fa-solid fa-award"></i></h2>
-        <weak id="no" style="text-align: center; margin-left: 250px; font-size: 27px; color:beige;"> A collection of my professional certifications, course completions, and achievements!</strong1>
-    </div><br>
-  <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="c1.jpg" class="d-block mx-auto w-50">
-    </div>
-    <div class="carousel-item">
-      <img src="c2.jpg" class="d-block mx-auto w-50">
-    </div>
-    <div class="carousel-item">
-      <img src="MassMutual.jpg" class="d-block mx-auto w-50">
-    </div>
-    <div class="carousel-item">
-      <img src="c3.jpg" class="d-block mx-auto w-50">
-    </div>
-    <div class="carousel-item">
-      <img src="c4.jpg" class="d-block mx-auto w-50">
-    </div>
-    <div class="carousel-item">
-      <img src="c5.jpg" class="d-block mx-auto w-50">
-    </div>
-  </div>
-</div>
-</div>
-</div>
-</section>
-
-
-  <section id="contact" class="py-5">
-    <div class="container">
-      <div class="text-center mb-4">
-        <h2>Get In Touch <i class="fa-solid fa-handshake-simple"></i></h2>
-        <p>Have a question or want to work together? Leave your details and I'll get back to you.</p>
-      </div>
-          <div class="card shadow-lg border-primary rounded-4 mx-auto" style="max-width: 850px;">
-        <div class="card-header bg-primary text-white text-center fs-5">Contact Form</div>
-        <div class="card-body">
-        <form action="https://formspree.io/f/mdklrdpe" method="POST" id="contactForm">
-          <div class="mb-3 row">
-            <label for="inputEmail" class="col-sm-3 col-form-label">Email</label>
-            <div class="col-sm-9"><input type="email" class="form-control" id="inputEmail" name="email" required></div>
-          </div>
-          <div class="mb-3 row">
-            <label for="inputName" class="col-sm-3 col-form-label">Name</label>
-            <div class="col-sm-9"><input type="text" class="form-control" id="inputName" name="name" required></div>
-          </div>
-          <div class="mb-4 row">
-            <label for="inputPhone" class="col-sm-3 col-form-label">Phone</label>
-            <div class="col-sm-9"><input type="tel" class="form-control" id="inputPhone" name="phone"></div>
-          </div>
-          <div class="mb-5 row">
-            <label for="inputPhone" class="col-sm-3 col-form-label">Message</label>
-            <div class="col-sm-9"><input type="textarea" class="form-control" id="inputPhone" name="phone"></div>
-          </div>
-          <div class="text-center"><button type="submit" class="btn btn-primary px-4">Submit</button></div>
-        </form>
-      </div>
-    </div>
-      <div class="text-center mt-4">
-        <p class="text-warning">✉️ shivakumarnayak2005@gmail.com</p>
-        <a href="https://www.linkedin.com/in/banoth-shiva-kumar-89437b279" target="_blank" class="me-3">
-          <i class="fa-brands fa-linkedin fa-2x"></i>
-        </a>
-        <a href="https://github.com/Shivakumar-09" target="_blank">
-          <i class="fa-brands fa-github fa-2x"></i>
-        </a>
       </div>
     </div>
   </section>
 
-  <footer class="footer bg-dark text-white text-center py-3">
-    <p>&copy; 2025 Banoth Shiva Kumar. All Rights Reserved.</p>
+
+  <section id="about" class="section-padding">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center text-lg-start">
+          <span class="text-accent fw-bold text-uppercase ls-2 mb-2 d-block">Who I Am</span>
+          <h2 class="section-title mb-4">About Me</h2>
+          <p class="lead mb-4">
+            I am a detail-oriented Frontend Developer with a strong foundation in the MERN stack.
+            My journey involves building responsive web applications that prioritize user experience and performance.
+          </p>
+          <p class="text-secondary mb-4">
+            With a deep interest in problem-solving and web technologies, I focus on writing clean, maintainable code.
+            I am passionate about learning new tools and methodologies to deliver scalable software solutions that make
+            an impact.
+            My goal is to leverage my skills in a professional environment to build rigorous and accessible web
+            products.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="skills" class="section-padding bg-darker">
+    <div class="container">
+      <h2 class="section-title text-center mb-5">Technical Skills</h2>
+      <div class="row g-4 justify-content-center">
+
+
+        <div class="col-md-6 col-lg-3">
+          <div class="skill-card h-100 p-4">
+            <div class="icon-box mb-3 text-accent">
+              <i class="fa-solid fa-laptop-code fa-2x"></i>
+            </div>
+            <h4 class="h5 mb-3">Frontend</h4>
+            <ul class="list-unstyled text-secondary">
+              <li>HTML5 & CSS3</li>
+              <li>JavaScript (ES6+)</li>
+              <li>React.js</li>
+              <li>Bootstrap 5</li>
+            </ul>
+          </div>
+        </div>
+
+
+        <div class="col-md-6 col-lg-3">
+          <div class="skill-card h-100 p-4">
+            <div class="icon-box mb-3 text-accent">
+              <i class="fa-solid fa-server fa-2x"></i>
+            </div>
+            <h4 class="h5 mb-3">Backend</h4>
+            <ul class="list-unstyled text-secondary">
+              <li>Node.js</li>
+              <li>Express.js</li>
+              <li>REST APIs</li>
+            </ul>
+          </div>
+        </div>
+
+
+        <div class="col-md-6 col-lg-3">
+          <div class="skill-card h-100 p-4">
+            <div class="icon-box mb-3 text-accent">
+              <i class="fa-solid fa-database fa-2x"></i>
+            </div>
+            <h4 class="h5 mb-3">Database</h4>
+            <ul class="list-unstyled text-secondary">
+              <li>MongoDB</li>
+              <li>Mongoose</li>
+            </ul>
+          </div>
+        </div>
+
+
+        <div class="col-md-6 col-lg-3">
+          <div class="skill-card h-100 p-4">
+            <div class="icon-box mb-3 text-accent">
+              <i class="fa-solid fa-wrench fa-2x"></i>
+            </div>
+            <h4 class="h5 mb-3">Tools</h4>
+            <ul class="list-unstyled text-secondary">
+              <li>Git & GitHub</li>
+              <li>VS Code</li>
+              <li>Postman</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section-padding">
+    <div class="container">
+      <h2 class="section-title text-center mb-5">Featured Projects</h2>
+      <div class="row g-4">
+
+
+        <div class="col-lg-4 col-md-6">
+          <div class="project-card h-100">
+            <div class="card-body p-4">
+              <h3 class="h4 card-title fw-bold mb-2">Essential Seven</h3>
+              <p class="text-accent small mb-3">Frontend Web Application</p>
+              <p class="card-text text-secondary mb-4">
+                A responsive frontend web application focused on delivering a clean user interface and usability.
+                Built with modern web technologies to ensure a seamless experience across devices.
+              </p>
+              <ul class="project-features text-secondary small mb-4">
+                <li><i class="fa-solid fa-check text-accent me-2"></i>Responsive Design</li>
+                <li><i class="fa-solid fa-check text-accent me-2"></i>Clean UI/UX</li>
+                <li><i class="fa-solid fa-check text-accent me-2"></i>Fast Performance</li>
+              </ul>
+              <div class="d-flex gap-2">
+                <a href="https://essential-seven.vercel.app/" target="_blank"
+                  class="btn btn-sm btn-outline-primary">Live Demo</a>
+                <a href="https://github.com/Shivakumar-09/Essential" target="_blank"
+                  class="btn btn-sm btn-outline-secondary">GitHub</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-lg-4 col-md-6">
+          <div class="project-card h-100">
+            <div class="card-body p-4">
+              <h3 class="h4 card-title fw-bold mb-2">Library Portal</h3>
+              <p class="text-accent small mb-3">Full Stack Web Application</p>
+              <p class="card-text text-secondary mb-4">
+                A comprehensive library management system with user authentication and data handling.
+                Features a clean dashboard-based UI for managing resources efficiently.
+              </p>
+              <ul class="project-features text-secondary small mb-4">
+                <li><i class="fa-solid fa-check text-accent me-2"></i>User Authentication</li>
+                <li><i class="fa-solid fa-check text-accent me-2"></i>Admin Dashboard</li>
+                <li><i class="fa-solid fa-check text-accent me-2"></i>Data Management</li>
+              </ul>
+              <div class="d-flex gap-2">
+                <a href="https://libraryportal.vercel.app/" target="_blank" class="btn btn-sm btn-outline-primary">Live
+                  Demo</a>
+                <a href="https://github.com/Shivakumar-09/libraryportal" target="_blank"
+                  class="btn btn-sm btn-outline-secondary">GitHub</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-lg-4 col-md-6">
+          <div class="project-card h-100">
+            <div class="card-body p-4">
+              <h3 class="h4 card-title fw-bold mb-2">Calculator App</h3>
+              <p class="text-accent small mb-3">Utility Application</p>
+              <p class="card-text text-secondary mb-4">
+                An interactive and accessible calculator application designed for accuracy and ease of use.
+                Focuses on logical implementation and responsive layout.
+              </p>
+              <ul class="project-features text-secondary small mb-4">
+                <li><i class="fa-solid fa-check text-accent me-2"></i>Mathematical Logic</li>
+                <li><i class="fa-solid fa-check text-accent me-2"></i>Keyboard Support</li>
+                <li><i class="fa-solid fa-check text-accent me-2"></i>Accessible UI</li>
+              </ul>
+              <div class="d-flex gap-2">
+                <a href="https://calculator-rho-umber.vercel.app/" target="_blank"
+                  class="btn btn-sm btn-outline-primary">Live Demo</a>
+                <a href="https://github.com/Shivakumar-09/Calculator" target="_blank"
+                  class="btn btn-sm btn-outline-secondary">GitHub</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section id="education" class="section-padding bg-darker">
+    <div class="container">
+      <h2 class="section-title text-center mb-5">Education Timeline</h2>
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <span class="date text-accent">2023 - 2027</span>
+            <h4 class="mt-2">B.Tech - Information Technology</h4>
+            <h5 class="institution text-muted">Vardhaman College Of Engineering</h5>
+            <p class="text-secondary mt-2">Currently pursuing Bachelor's in IT, focusing on software engineering and
+              full-stack development.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <span class="date text-accent">2021 - 2023</span>
+            <h4 class="mt-2">Intermediate - MPC</h4>
+            <h5 class="institution text-muted">Sri Chaitanya Jr College</h5>
+            <p class="text-secondary mt-2">Completed intermediate education with a focus on Mathematics, Physics, and
+              Chemistry.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <span class="date text-accent">2009 - 2021</span>
+            <h4 class="mt-2">Secondary Education</h4>
+            <h5 class="institution text-muted">S.T Savio High School</h5>
+            <p class="text-secondary mt-2">Completed secondary schooling with a strong academic record.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section id="certificates" class="section-padding">
+    <div class="container">
+      <h2 class="section-title text-center mb-5">Certifications</h2>
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div id="certCarousel" class="carousel slide shadow-lg rounded-4 overflow-hidden" data-bs-ride="carousel"
+            data-bs-interval="2500">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="c1.jpg" class="d-block w-100" alt="Certificate 1">
+              </div>
+              <div class="carousel-item">
+                <img src="c2.jpg" class="d-block w-100" alt="Certificate 2">
+              </div>
+              <div class="carousel-item">
+                <img src="MassMutual.jpg" class="d-block w-100" alt="MassMutual Certificate">
+              </div>
+              <div class="carousel-item">
+                <img src="c3.jpg" class="d-block w-100" alt="Certificate 3">
+              </div>
+              <div class="carousel-item">
+                <img src="c4.jpg" class="d-block w-100" alt="Certificate 4">
+              </div>
+              <div class="carousel-item">
+                <img src="c5.jpg" class="d-block w-100" alt="Certificate 5">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#certCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#certCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="contact" class="section-padding bg-darker">
+    <div class="container">
+      <h2 class="section-title text-center mb-5">Get In Touch</h2>
+      <div class="row justify-content-center">
+        <div class="col-lg-6">
+          <div class="card border-0 shadow-lg p-4">
+            <div class="card-body">
+              <form action="https://formspree.io/f/mdklrdpe" method="POST" id="contactForm">
+                <div class="mb-3">
+                  <label for="inputName" class="form-label text-white small fw-bold">Name</label>
+                  <input type="text" class="form-control" id="inputName" name="name" required placeholder="Your Name">
+                </div>
+                <div class="mb-3">
+                  <label for="inputEmail" class="form-label text-white small fw-bold">Email</label>
+                  <input type="email" class="form-control" id="inputEmail" name="email" required
+                    placeholder="name@example.com">
+                </div>
+                <div class="mb-3">
+                  <label for="inputPhone" class="form-label text-white small fw-bold">Phone (Optional)</label>
+                  <input type="tel" class="form-control" id="inputPhone" name="phone" placeholder="+91 98765 43210">
+                </div>
+                <div class="mb-4">
+                  <label for="inputMessage" class="form-label text-white small fw-bold">Message</label>
+                  <textarea class="form-control" id="inputMessage" name="message" rows="4" required
+                    placeholder="Your message here..."></textarea>
+                </div>
+                <div class="d-grid">
+                  <button type="submit" class="btn btn-primary py-2">Send Message</button>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <div class="text-center mt-5">
+            <div class="social-links">
+              <a href="https://www.linkedin.com/in/banoth-shiva-kumar-89437b279" target="_blank" class="social-btn me-3"
+                title="LinkedIn">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+              <a href="https://github.com/Shivakumar-09" target="_blank" class="social-btn" title="GitHub">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="py-4 text-center border-top border-secondary mt-auto">
+    <div class="container">
+      <p class="mb-0 text-secondary small">&copy; 2025 Banoth Shiva Kumar. All Rights Reserved.</p>
+    </div>
   </footer>
+
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="script.js"></script>
 </body>
+
 </html>
-
-
